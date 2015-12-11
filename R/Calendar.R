@@ -102,7 +102,7 @@ print.Calendar <- function(cal, ...) {
       'to', cal$endDate,
       '\ndib:', cal$dib,
       '\n')
-  invisible(x)
+  invisible(cal)
 }
 
 
@@ -184,11 +184,13 @@ prevbiz <- function(lhs, method = "next", cal = getOption("calendar") ) `%+%`(lh
 #' @export
 bizdays <- function(from, to, cal=getOption("calendar")) UseMethod('bizdays')
 
+#' @export
 bizdays.default <- function(from, to, cal=getOption("calendar")) {
   from <- as.Date(from)
   bizdays.Date(from, to, cal)
 }
 
+#' @export
 bizdays.Date <- function(from, to, cal=getOption("calendar")) {
   tryCatch({to <- as.Date(to)}, error=function(e) e)
   # ---
