@@ -96,8 +96,8 @@ Calendar <- function (holidays=integer(0),
 #' @export
 print.Calendar <- function(cal, ...) {
   cat('Calendar:', cal$name,
-      '\nRange:', cal$startDate,
-      'to', cal$endDate,
+      '\nRange:', as.Date(cal$startDate,origin="1970-1-1"),
+      'to', as.Date(cal$endDate,origin="1970-1-1"),
       '\ndib:', cal$dib,
       '\n')
   invisible(cal)
