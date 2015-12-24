@@ -44,8 +44,8 @@
 #' 
 #' @export
 #' @examples
-#' data(holidaysCN)
-#' that <- Calendar(name="CN", holidays = holidaysCN)
+#' data(holidayCN)
+#' that <- Calendar(name="CN", holidays = holidayCN)
 #' options(calendar=that)
 #' 
 #' # ACTUAL calendar
@@ -54,12 +54,10 @@
 #' cal <- Calendar(start.date="1976-07-12", end.date="2013-10-28")
 #' is.null(cal$name) # TRUE
 Calendar <- function (holidays=integer(0),
-                      startDate="2005-01-01", endDate="2015-12-31", 
+                      startDate="2005-01-01", endDate="2020-12-31", 
                       pattern = c("%Y-%m-%d","%Y%m%d"), name="gregorian", dib=NULL) {
   
   # check the parameters
-  startDate <- match.arg(startDate)
-  endDate   <- match.arg(endDate)
   pattern   <- match.arg(pattern)
   
   

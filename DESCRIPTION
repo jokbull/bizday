@@ -1,10 +1,10 @@
 Package: bizday
 Type: Package
-Title: What the package does (short line)
-Version: 1.0
-Date: 2015-07-04
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
-RoxygenNote: 5.0.1
+Title: business date in China stock market.
+Version: 1.1
+Date: 2015-12-24
+Author: scrat
+Maintainer: scrat <lidazhou@enjoyfund.cn>
+Description: Utility tools for business date calucation.
+License: Nothing...
+RoxygenNote: 5.0.0
