@@ -128,16 +128,16 @@ print.Calendar <- function(cal, ...) {
 #' @rdname adjust.date
 #' 
 #' @export 
-`%+%` <-  function(lhs, rhs, method = c("next","previous"), cal = getOption("calendar"),...) UseMethod("%+%")
+`%add%` <-  function(lhs, rhs, method = c("next","previous"), cal = getOption("calendar"),...) UseMethod("%add%")
 
 #' @export 
-`%+%.default` <- function(lhs, rhs, method = c("next","previous"), cal = getOption("calendar"),...) {
+`%add%.default` <- function(lhs, rhs, method = c("next","previous"), cal = getOption("calendar"),...) {
   lhs = as.Date(lhs)
   `%+%.Date`(lhs, rhs, method, cal)
 }
 
 #' @export 
-`%+%.Date` <-  function(lhs, rhs, method = c("next","previous"), cal = getOption("calendar"),...) {
+`%add%.Date` <-  function(lhs, rhs, method = c("next","previous"), cal = getOption("calendar"),...) {
   # check rhs  
   stopifnot(is.numeric(rhs))
   

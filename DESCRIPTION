@@ -1,10 +1,10 @@
 Package: bizday
 Type: Package
 Title: business date in China stock market.
-Version: 1.1.2
-Date: 2018-04-05
+Version: 1.1.3
+Date: 2018-06-01
 Author: scrat
-Maintainer: scrat <lidazhou@enjoyfund.cn>
+Maintainer: scrat <jokbullcn@gmail.com>
 Description: Utility tools for business date calucation.
 License: Nothing...
 RoxygenNote: 6.0.1
